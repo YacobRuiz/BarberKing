@@ -20,3 +20,11 @@ This project was developed as part of my web development portfolio, with the goa
 - Appointment booking section
 - Clean and structured navigation
 - Responsive layout for different screen sizes
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
