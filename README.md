@@ -28,3 +28,14 @@ This project was developed as part of my web development portfolio, with the goa
 - JavaScript
 - Git
 - GitHub
+
+## 📂 Project Structure
+
+```text
+BarberKing/
+├── assets/       # Images and other visual resources
+├── index.html    # Main page structure
+├── style.css     # Website styling and layout
+├── script.js     # JavaScript functionality
+├── .gitignore    # Files and folders excluded from Git
+└── README.md     # Project documentation
