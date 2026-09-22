@@ -1,0 +1,486 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(249, 249, 249);
+    margin: 0;
+}
+
+h1 {
+    font-size: 125px;
+    font-weight: 800;
+    letter-spacing: 70px;
+    text-align: left;
+    padding: 25px;
+    margin: 0;
+}
+
+/*Animaciones*/
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Nav Bar*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 30px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 25px;
+    font-weight: 750;
+    text-transform: uppercase;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks a:hover{
+    color: rgb(249, 249, 249);
+    transform: scale(1.1);
+}
+
+/*Hero*/
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#hero .heroMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#hero .heroMain img{
+    width: 600px;
+    height: 600px;
+    border-radius: 25%;
+}
+
+#hero .textSup{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#hero .textSub{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+a.cta{
+    padding: 10px 10px;
+    border: 2px solid rgb(249, 249, 249);
+    text-decoration: none;
+    background-color: rgb(130, 129, 129);
+    color: rgb(255, 254, 254);
+    transition: all 0.3s ease-in-out;
+}
+
+a.cta:hover{
+    background-color: rgb(249, 249, 249);
+    color: rgb(133, 131, 131);
+    border: 1px solid rgb(133, 131, 131);
+    transform: scale(1.1);
+}
+
+/*Servicios */
+#servicios{
+    padding: 100px 10%;
+}
+
+#servicios h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+#servicios .servicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(133, 131, 131);
+}
+
+#servicios .servicio > div{
+    flex: 1;
+    text-align: left;
+    padding: 0 100px;
+}
+
+#servicios .servicio h3{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+}
+
+#servicios .servicio p{
+    margin: 5px 0 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#servicios .servicio > span{
+    font-size: 14px;
+    letter-spacing: 2px;
+    min-width: 60px;
+}
+
+/*Footer*/
+footer{
+    padding: 80px 10% 30px;
+}
+
+.footerInfo{
+    display: flex;
+    gap: 120px;
+}
+
+.footerTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBottom {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(80, 80, 80);
+}
+
+/*Galeria*/
+#galeria{
+    padding: 100px 10%;
+}
+
+#galeria h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.contenedorGaleria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contenedorGaleria img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.contenedorGaleria img:hover{
+    transform: scale(1.02);
+}
+
+.galeriaIntro{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: rgb(180, 180, 180);
+    margin-bottom: -30px 0 50px;
+}
+
+/*Nosotros*/
+#nosotros{
+    padding: 100px 10%;
+}
+
+#nosotros h2{
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.contenedorNosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+.nosotrosImg{
+    flex: 1;
+}
+
+.nosotrosImg img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.nosotrosTexto{
+    flex: 1;
+}
+
+.etiquetaNosotros{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(180, 180, 180);
+}
+
+.nosostrosTexto h3{
+    font-size: 50px;
+    letter-spacing: 3px;
+    margin: 20px 0;
+}
+
+.nosostrosTexto p{
+    font-size: 20px;
+    line-height: 1.7;
+    color: rgb(180, 180, 180);
+}
+
+/*CTA Reserva*/
+#reservar{
+    padding: 150px 10%;
+    text-align: center;
+    align-items: center;
+    border: 1px solid rgb(80, 80, 80);
+}
+
+.contenedorReserva{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservaEtiqueta{
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: rgb(149, 149, 149);
+}
+
+.lineaReserva{
+    width: 60px;
+    height: 2px;
+    background-color: rgb(249, 249, 249);
+    margin: 25px auto;
+}
+
+.reservaTexto{
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgb(180, 180, 180);
+}
+
+#reservar h2{
+    font-size: 70px;
+    letter-spacing: 5px;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.botonReserva{
+    display: inline-block;
+    padding: 15px 35px;
+    border: 2px solid rgb(249, 249, 249);
+    color: rgb(249, 249, 249);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.botonReserva:hover{
+    background-color: rgb(249, 249, 249);
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+    /*navBar*/
+    nav{
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navLinks{
+        gap: 20px;
+    }
+
+    .navLinks a{
+        font-size: 16px;
+    }
+
+    /*Hero*/
+    h1 {
+    font-size: 50px;
+    letter-spacing: 15px;
+    text-align: center;
+    padding: 25px 0;
+    }
+
+    #hero {
+      padding: 50px 20px;
+    }
+
+    #hero .heroMain {
+        flex-direction: column;
+        gap: 30px;
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+
+    }
+
+    #hero .heroMain img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /*servicios responsive*/
+    #servicios{
+        padding: 70px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #servicios h2{
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+
+    #servicios .servicio{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #servicios .servicio > div{
+        padding: 0 20px;
+    }
+
+    /*Galeria*/
+    #galeria {
+        padding: 70px 20px;
+    }
+
+    #galeria h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+
+    .contenedorGaleria {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #nosotros {
+        padding: 70px 20px;
+    }
+
+    #nosotros h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        margin-bottom: 40px;
+    }
+
+    .contenedorNosotros {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .nosotrosImagen img {
+        height: 400px;
+    }
+
+    .nosotrosTexto h3 {
+        font-size: 45px;
+    }
+
+    #reservar {
+        padding: 100px 20px;
+    }
+
+    #reservar h2 {
+        font-size: 45px;
+        letter-spacing: 3px;
+    }
+
+    .reservaTexto {
+        font-size: 16px;
+    }
+
+    .botonReserva {
+        padding: 14px 25px;
+    }
+
+    footer {
+        padding: 60px 20px 25px;
+    }
+
+    .footerTop {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footerInfo {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footerBottom {
+        margin-top: 40px;
+    }
+}

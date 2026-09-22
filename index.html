@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>BarberKing | Barbería Moderna</title>
+        <meta name="description" content="BarberKing: cortes de cabello, barba y estilo con precisión y presencia. Reserva tu próxima cita.">
+
+        <link rel="icon" type="image/png" href="./assets/iconos/favicon.png">
+        <link rel="stylesheet" href="style.css">        
+    </head>
+
+    <body>
+        <header>
+            <!-- NavBar -->
+            <nav>
+                <div class="logo">BarberKing</div>
+
+                <div class="navLinks">
+                    <a href="#">Inicio</a>
+                    <a href="#servicios">Servicios</a>
+                    <a href="#reservar">Reservar</a>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section id="hero">
+            <p class="textSup">MODERN BARBERING</p>
+
+            <div class="heroMain">
+                <h1>THE ART OF THE CUT</h1>
+                <img src="assets/imagenes/barberKing.jpg" alt="Imagen de la barbería">
+            </div>
+
+            <p class="textSub">Precisión, Estilo, Presencia</p>
+
+            <a href="#reservar" class="cta">Reservar Cita</a>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios">
+            <h2>Servicios</h2>
+
+            <div class="contenedorServicios">
+                <div class="servicio">
+                    <span>01</span>
+                    <div>
+                        <h3>Corte Clásico</h3>
+                        <p>Corte personalizado y acabado.</p>
+                    </div>
+                    <span>Q150</span>
+                </div>
+
+                <div class="servicio">
+                    <span>02</span>
+                    <div>
+                        <h3>Barba</h3>
+                        <p>Recorte y perfilado de barba.</p>
+                    </div>
+                    <span>Q100</span>
+                </div>
+
+                <div class="servicio">
+                    <span>03</span>
+                    <div>
+                        <h3>Skin Fade</h3>
+                        <p>Degradado de precisión.</p>
+                    </div>
+                    <span>Q175</span>
+                </div>
+
+                <div class="servicio">
+                    <span>04</span>
+                    <div>
+                        <h3>Corte + Barba</h3>
+                        <p>Servicio completo.</p>
+                    </div>
+                    <span>Q230</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería -->
+        <section id="galeria">
+            <h2>Galería</h2>
+
+            <p class="galeriaIntro">
+                Precisión en cada corte. Estilo en cada detalle.
+            </p>
+
+            <div class="contenedorGaleria">
+                <img src="./assets/imagenes/corte1.png" alt="Corte de cabello 1">
+                <img src="./assets/imagenes/corte2.png" alt="Corte de cabello 2">
+                <img src="./assets/imagenes/corte3.png" alt="Corte de cabello 3">
+                <img src="./assets/imagenes/corte4.png" alt="Corte de cabello 4">
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros">
+            <h2>Sobre Nosotros</h2>
+
+            <div class="contenedorNosotros">
+                <div class="nosotrosImg">
+                    <img src="./assets/imagenes/barberKing.jpg" alt="Imagen del interior de la barbería">
+                </div>
+
+                <div class="nosotrosTexto">
+                    <p class="etiquetaNosotros">BARBERKING</p>
+
+                    <h3>Más que un corte.</h3>
+
+                    <p>
+                        En BarberKing creemos que un corte no solo define tu apariencia,
+                        también tu presencia.
+                    </p>
+
+                    <p>
+                        Combinamos precisión, estilo y técnica para ofrecer una experiencia
+                        pensada para cada cliente.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Reserva -->
+        <section id="reservar">
+            <div class="contenedorReservar">
+                <p class="etiquetaReservar">TU PRÓXIMO CORTE</p>
+
+                <div class="lineaReserva"></div>
+
+                <h2>Reserva tu cita</h2>
+
+                <p class="reservaTexto">
+                    Tu estilo empieza con un buen corte.
+                    Reserva tu cita y déjanos hacer el resto.
+                </p>
+
+                <a href="https://wa.me/NUMERO_DEL_CLIENTE"
+                   class="botonReserva"
+                   target="_blank">
+                    Reservar Cita
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footerTop">
+
+                <div class="footerBrand">
+                    <h2>BarberKing</h2>
+                    <p>Precisión, Estilo, Presencia</p>
+                </div>
+
+                <div class="footerInfo">
+                    <div>
+                        <h3>Horario</h3>
+                        <p>Lunes - Viernes: 9:00 AM - 19:00 PM</p>
+                        <p>Sábado: 9:00 AM - 17:00 PM</p>
+                    </div>
+
+                    <div>
+                        <h3>Contacto</h3>
+                        <p>WhatsApp</p>
+                        <p>Instagram</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footerBottom">
+                <p>© 2026 BarberKing</p>
+            </div>
+        </footer>
+
+        <!-- Animaciones -->
+        <script>
+            const secciones = document.querySelectorAll("section");
+
+            const observer = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                    }
+                });
+            });
+
+            secciones.forEach((seccion) => {
+                observer.observe(seccion);
+            });
+        </script>
+
+    </body>
+</html>
